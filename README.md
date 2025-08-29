@@ -5,6 +5,12 @@
 - Architecture :
     Wikimedia Event Stream  →  Kafka Producer  →  Kafka Broker  →  Kafka Consumer  →  MySQL Database
 
+  <img width="940" height="434" alt="image" src="https://github.com/user-attachments/assets/4b48643b-230e-4d7e-bf30-6f4803786f2a" />
+
+  <img width="940" height="531" alt="image" src="https://github.com/user-attachments/assets/e79e0c6e-661f-4927-977b-317a2d6b5161" />
+
+
+
   - Producer: Connects to Wikimedia’s real-time API and streams data into Kafka.
   - Kafka Broker: Acts as the message queue for storing and forwarding events.
   - Consumer: Subscribes to Kafka topics, consumes events, and saves them in MySQL.
