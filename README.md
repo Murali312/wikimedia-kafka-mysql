@@ -33,32 +33,32 @@ Getting Started
 
 
 2. Clone the Repository
-   git clone https://github.com/<your-username>/wikimedia-kafka-mysql-streaming.git
-   cd wikimedia-kafka-mysql-streaming
+   - git clone https://github.com/<your-username>/wikimedia-kafka-mysql-streaming.git
+   - cd wikimedia-kafka-mysql-streaming
 
 3. Start Kafka & Zookeeper
    # Start Zookeeper
-   bin/zookeeper-server-start.sh config/zookeeper.properties
+   - bin/zookeeper-server-start.sh config/zookeeper.properties
 
    # Start Kafka broker
-   bin/kafka-server-start.sh config/server.properties
+   - bin/kafka-server-start.sh config/server.properties
 
 4. Setup MySQL Database
-    CREATE DATABASE wikimedia;
+    - CREATE DATABASE wikimedia;
 
   Update your application.properties of 'kafka-consumer-database' module with MySQL credentials:
-    spring.datasource.url=jdbc:mysql://localhost:3306/wikimedia
-    spring.datasource.username=root
-    spring.datasource.password=yourpassword
-    spring.jpa.hibernate.ddl-auto=update
+    - spring.datasource.url=jdbc:mysql://localhost:3306/wikimedia
+    - spring.datasource.username=root
+    - spring.datasource.password=yourpassword
+    - spring.jpa.hibernate.ddl-auto=update
 
 5. Run the Application
-     mvn spring-boot:run
+     - mvn spring-boot:run
 
 
 - Sample Data Stored in MySQL
-    ID	Wikimedia Data (JSON)
-    1	  {"id":123,"title":"Main Page","timestamp":"2025-08-29T10:15:30Z","user":"ExampleUser"}
+    - ID	Wikimedia Data (JSON)
+    -  1	{"id":123,"title":"Main Page","timestamp":"2025-08-29T10:15:30Z","user":"ExampleUser"}
 
 - Use Cases
     - Real-time monitoring of Wikimedia edits
