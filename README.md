@@ -46,7 +46,7 @@ Getting Started
 4. Setup MySQL Database
     - CREATE DATABASE wikimedia;
 
-  Update your application.properties of 'kafka-consumer-database' module with MySQL credentials:
+- Update your application.properties of 'kafka-consumer-database' module with MySQL credentials:
     - spring.datasource.url=jdbc:mysql://localhost:3306/wikimedia
     - spring.datasource.username=root
     - spring.datasource.password=yourpassword
