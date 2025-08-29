@@ -18,11 +18,13 @@
   - Maven
 
 Getting Started 
+
 1. Prerequisites
   - Java 17+
   - Apache Kafka
   - MySQL
   - Maven
+
 
 2. Clone the Repository
    git clone https://github.com/<your-username>/wikimedia-kafka-mysql-streaming.git
